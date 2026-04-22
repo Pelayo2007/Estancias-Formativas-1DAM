@@ -81,42 +81,39 @@ app.controller("HomeController", ["$scope", "$timeout", function ($scope, $timeo
 
     vm.selectedPerson = vm.people[0];
 
-    vm.videoFilters = ["Todos", "Historia", "Experiencia"];
-    vm.activeVideoFilter = "Todos";
-
     vm.videos = [
         {
-            title: "Presentacion del estadio",
+            title: "David Villa",
             type: "Experiencia",
             src: "videos/video1.mp4",
             description: "Una entrada audiovisual potente para situar al visitante dentro del recorrido."
         },
         {
-            title: "Leyenda destacada",
+            title: "Quini",
             type: "Historia",
             src: "videos/video2.mp4",
             description: "Contenido centrado en una figura clave para reforzar la narrativa del proyecto."
         },
         {
-            title: "Momento inmersivo",
+            title: "Luis Enrique",
             type: "Experiencia",
             src: "videos/video3.mp4",
             description: "Material perfecto para mostrar el tono visual del tour virtual."
         },
         {
-            title: "Recorrido por zonas clave",
+            title: "Abelardo",
             type: "Experiencia",
             src: "videos/video4.mp4",
             description: "Sirve para explicar la navegacion entre grada, vestuarios y terreno de juego."
         },
         {
-            title: "Perfil de Joaquin",
+            title: "Joaquin",
             type: "Historia",
             src: "videos/video5.mp4",
             description: "Una pieza intermedia para completar la secuencia audiovisual antes del cierre de Chus."
         },
         {
-            title: "Cierre emotivo del proyecto",
+            title: "Chus",
             type: "Historia",
             src: "videos/video6.mp4",
             description: "Un final mas emocional con foco en la memoria del club y la aficion."
@@ -150,11 +147,6 @@ app.controller("HomeController", ["$scope", "$timeout", function ($scope, $timeo
         refreshDynamicUi();
     };
 
-    vm.setVideoFilter = function (filter) {
-        vm.activeVideoFilter = filter;
-        refreshDynamicUi();
-    };
-
     vm.selectPerson = function (person) {
         vm.selectedPerson = person;
         refreshDynamicUi();
@@ -181,10 +173,6 @@ app.controller("HomeController", ["$scope", "$timeout", function ($scope, $timeo
         matchesFilter = vm.activeFilter === "Todos" || person.category === vm.activeFilter;
 
         return matchesSearch && matchesFilter;
-    };
-
-    vm.videoFilter = function (video) {
-        return vm.activeVideoFilter === "Todos" || video.type === vm.activeVideoFilter;
     };
 
     vm.baseTotal = function () {
