@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="vibeCodingApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vibe Coding | Sporting</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+	<link rel="icon" href="../imagenes/icono.png">
+	<link rel="stylesheet" type="text/css" href="../css/mis-estilos.css">
+	<link rel="stylesheet" type="text/css" href="vibecoding.css">
+	<script defer src="../js/tag-tracking.js"></script>
+</head>
+<body ng-controller="VibeCodingController as vm" ng-cloak>
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-sporting">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center gap-2" href="../index.html#inicio">
+					<img src="../imagenes/icono.png" alt="Escudo Sporting" width="42">
+					<span>Sporting</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuVibe" aria-controls="menuVibe" aria-expanded="false" aria-label="Abrir menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuVibe">
+					<ul class="navbar-nav ms-auto align-items-lg-center">
+						<li class="nav-item"><a class="nav-link" href="../index.html#inicio">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#personajes">Leyendas</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#videos">Videos</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#presupuesto">Presupuesto</a></li>
+						<li class="nav-item"><a class="nav-link nav-link-active" href="vibecoding.html">Vibe Coding</a></li>
+						<li class="nav-item"><a class="nav-link" href="../index.html#contacto">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="vibe-page">
+		<section class="hero-section vibe-hero">
+			<div class="container">
+				<div class="row align-items-center gy-5">
+					<div class="col-lg-7">
+						<span class="eyebrow">Nueva seccion del proyecto</span>
+						<h1>Vibe Coding aplicado al desarrollo de esta web.</h1>
+						<p class="hero-copy">
+							Una pagina independiente para explicar como hemos usado la experimentacion, el diseno y
+							las herramientas modernas para construir una experiencia mas dinamica.
+						</p>
+						<div class="hero-actions">
+							<a class="btn btn-primary btn-lg" href="#que-es">Que es el Vibe Coding</a>
+							<a class="btn btn-outline-dark btn-lg" href="#videos-utilizados">Ver videos</a>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="vibe-highlight reveal-up">
+							<div class="vibe-badge">
+								<span>HTML + CSS + JavaScript + AngularJS</span>
+								<strong>Experimentacion guiada</strong>
+							</div>
+							<div class="vibe-pill-grid">
+								<div class="vibe-pill" ng-repeat="point in vm.heroPoints">{{ point }}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="que-es" class="container section-spacing">
+			<div class="section-heading reveal-up">
+				<div>
+					<p class="section-kicker">Contexto</p>
+					<h2>&iquest;Qu&eacute; es el Vibe Coding?</h2>
+				</div>
+				<p>Una forma de programar donde se aprende, se prueba y se mejora mientras el proyecto va tomando forma.</p>
+			</div>
+
+			<div class="vibe-content-split">
+				<article class="vibe-copy-card vibe-copy-panel reveal-up">
+					<div class="vibe-panel-head">
+						<span class="vibe-panel-icon">01</span>
+						<div>
+							<p class="section-kicker">Concepto</p>
+							<h3>Explicacion de que es el Vibe Coding</h3>
+						</div>
+					</div>
+					<div class="vibe-panel-body">
+						<p>El vibe coding es una forma relativamente nueva de entender la programaci&oacute;n, especialmente popular entre estudiantes y desarrolladores que est&aacute;n empezando en el mundo del software. En lugar de centrarse &uacute;nicamente en escribir c&oacute;digo perfecto desde el principio, el vibe coding se basa en experimentar, probar ideas y dejar que el proceso creativo fluya mientras se programa.</p>
+						<p>Desde nuestro punto de vista como estudiantes DAM, los cuales nos debemos de adaptar a el futuro de la programaci&oacute;n, el vibe coding puede ser una manera muy &uacute;til de aprender. Cuando empezamos a programar, es normal cometer errores, no entender todo a la primera o tener que buscar muchas soluciones en internet. El vibe coding propone precisamente eso: programar mientras aprendemos, probando distintas soluciones hasta que el programa funcione, sin miedo a equivocarse.</p>
+						<p>En este enfoque, el ambiente tambi&eacute;n tiene cierta importancia. Muchos desarrolladores hablan de trabajar con m&uacute;sica, en un espacio c&oacute;modo y con herramientas que les resulten agradables. Todo esto ayuda a mantener la motivaci&oacute;n y a entrar en un estado de concentraci&oacute;n en el que las ideas fluyen con m&aacute;s facilidad. De esta forma, programar no se ve solo como una tarea t&eacute;cnica, sino tambi&eacute;n como una actividad creativa.</p>
+						<p>Adem&aacute;s, hoy en d&iacute;a el vibe coding tambi&eacute;n se relaciona con el uso de herramientas modernas que ayudan a escribir c&oacute;digo m&aacute;s r&aacute;pido, como editores inteligentes o asistentes basados en inteligencia artificial. Estas herramientas permiten centrarse m&aacute;s en la idea del proyecto que en detalles repetitivos del c&oacute;digo, lo que facilita que incluso los estudiantes puedan desarrollar proyectos interesantes desde etapas tempranas de su aprendizaje.</p>
+					</div>
+				</article>
+
+				<article class="vibe-copy-card vibe-copy-panel vibe-copy-panel-accent reveal-up">
+					<div class="vibe-panel-head">
+						<span class="vibe-panel-icon">02</span>
+						<div>
+							<p class="section-kicker">Aplicacion</p>
+							<h3>Partes donde nosotros hemos usado Vibe Coding</h3>
+						</div>
+					</div>
+					<div class="vibe-panel-body">
+						<p>En nuestro caso, para el desarrollo de esta p&aacute;gina web hemos aplicado este enfoque en varias partes del proyecto. Tanto el CSS, el JavaScript y parte de la estructura creada con Angular se han desarrollado siguiendo esta filosof&iacute;a de experimentaci&oacute;n y mejora progresiva.</p>
+						<p>Por ejemplo, en la parte de CSS hemos utilizado vibe coding para experimentar con los estilos visuales de la p&aacute;gina, ajustando colores, espaciados, tama&ntilde;os y distribuciones hasta conseguir una interfaz clara y agradable para el usuario.</p>
+						<p>En cuanto al JavaScript, el vibe coding nos ha servido para implementar peque&ntilde;as funcionalidades interactivas, como eventos, animaciones o comportamientos din&aacute;micos.</p>
+						<p>Por &uacute;ltimo, tambi&eacute;n hemos aplicado este enfoque en Angular, especialmente en la organizaci&oacute;n de componentes y en la estructura general de la aplicaci&oacute;n.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="videos-utilizados" class="container section-spacing">
+			<div class="section-heading reveal-up">
+				<div>
+					<p class="section-kicker">Recursos</p>
+					<h2>Videos utilizados durante el proyecto</h2>
+				</div>
+				<p>Una galeria responsive con miniaturas de YouTube que se abren directamente en una pesta&ntilde;a nueva.</p>
+			</div>
+
+			<div class="video-thumb-grid">
+				<a
+					class="video-thumb-card reveal-up"
+					ng-repeat="video in vm.youtubeVideos track by video.id"
+					ng-href="{{ video.url }}"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Abrir {{ video.title }} en YouTube">
+					<div class="video-thumb-image">
+						<img ng-src="{{ video.thumbnail }}" alt="{{ video.title }}">
+						<span class="video-thumb-play">Ver video</span>
+					</div>
+					<div class="video-thumb-copy">
+						<h3>{{ video.title }}</h3>
+						<p>{{ video.description }}</p>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section id="ia-vibe" class="container section-spacing">
+			<div class="section-heading reveal-up">
+				<div>
+					<p class="section-kicker">Herramientas</p>
+					<h2>IA utilizadas para Vibe Coding</h2>
+				</div>
+				<p>Tarjetas interactivas con algunas de las herramientas que mejor encajan con esta forma de desarrollar.</p>
+			</div>
+
+			<div class="ai-card-grid">
+				<article
+					class="ai-card reveal-up"
+					ng-repeat="tool in vm.aiTools track by tool.name"
+					ng-class="{ 'ai-card-selected': vm.selectedTool.name === tool.name }"
+					ng-click="vm.selectTool(tool)"
+					tabindex="0"
+					role="button"
+					ng-keydown="vm.handleToolKey($event, tool)">
+					<div class="ai-icon">
+						<img ng-src="{{ tool.icon }}" alt="Icono de {{ tool.name }}">
+					</div>
+					<div class="ai-card-copy">
+						<h3>{{ tool.name }}</h3>
+						<p>{{ tool.description }}</p>
+					</div>
+				</article>
+			</div>
+
+			<div class="ai-detail-card reveal-up">
+				<p class="section-kicker">Herramienta destacada</p>
+				<h3>{{ vm.selectedTool.name }}</h3>
+				<p>{{ vm.selectedTool.description }}</p>
+			</div>
+		</section>
+	</main>
+
+	<footer id="contacto" class="contact-footer">
+		<div class="container">
+			<div class="section-heading reveal-up">
+				<div>
+					<p class="section-kicker">Equipo</p>
+					<h2>Contacto del proyecto</h2>
+				</div>
+				<p>Mantenemos la misma base visual del sitio principal para que la navegacion sea coherente.</p>
+			</div>
+			<div class="row g-4">
+				<div class="col-md-4">
+					<div class="contact-card reveal-up">
+						<h3>Alejandro Bayon Mon</h3>
+						<a href="mailto:txa38306@educastur.es">txa38306@educastur.es</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact-card reveal-up">
+						<h3>Pelayo Saldana Fernandez</h3>
+						<a href="mailto:wrb34469@educastur.es">wrb34469@educastur.es</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact-card reveal-up">
+						<h3>Hugo Valles Murias</h3>
+						<a href="mailto:upv66096@educastur.es">upv66096@educastur.es</a>
+					</div>
+				</div>
+			</div>
+			<p class="footer-note">IES Juan Jose Calvo Miguel, 1o DAM</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="vibecoding.js"></script>
+</body>
+</html>
