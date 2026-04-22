@@ -4,8 +4,8 @@ Este repositorio contiene toda la documentación, diarios de aprendizaje y proye
 
 ## 👥 Autores (Grupo)
 * **Pelayo Saldaña Fdez** - [Pelayo2007](https://github.com/Pelayo2007)
-* **Alejandro Bayón Mon**
-* **Hugo Valles Murias**
+* **Alejandro Bayón Mon** - [bayon06](https://github.com/bayon06)
+* **Hugo Valles Murias** - [HVallesM](https://github.com/HVallesM)
 
 ## 📁 Estructura del Repositorio
 
@@ -32,6 +32,6 @@ Durante estas estancias hemos puesto en práctica:
 3.  Documentar de forma rigurosa el proceso de aprendizaje y los hitos alcanzados.
 
 ---
-**Curso:** 2025/2026 (o el que corresponda)  
+**Curso:** 2025/2026 
 **Centro Educativo:** [IES juan José Calvo Miguel](https://alojaweb.educastur.es/web/iesjuanjosecalvomiguel)  
 **Ciclo:** 1º Desarrollo de Aplicaciones Multiplataforma (DAM)
