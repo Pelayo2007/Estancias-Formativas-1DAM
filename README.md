@@ -23,7 +23,7 @@ Durante estas estancias hemos puesto en práctica:
 
 * **Desarrollo:** ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 * **Gestión:** Control de versiones con Git/GitHub, documentación técnica y análisis presupuestario.
-* **Entorno:** [Añadir aquí vuestro IDE, ej: VS Code / IntelliJ]
+* **Entorno:** VSCode, Sublime
 
 ## 🎯 Objetivos de las Estancias
 
@@ -32,6 +32,6 @@ Durante estas estancias hemos puesto en práctica:
 3.  Documentar de forma rigurosa el proceso de aprendizaje y los hitos alcanzados.
 
 ---
-**Curso:** 2023/2024 (o el que corresponda)  
+**Curso:** 2025/2026 (o el que corresponda)  
 **Centro Educativo:** [IES juan José Calvo Miguel](https://alojaweb.educastur.es/web/iesjuanjosecalvomiguel)  
 **Ciclo:** 1º Desarrollo de Aplicaciones Multiplataforma (DAM)
