@@ -260,25 +260,14 @@
 		<section id="videos" class="container section-spacing">
 			<div class="section-heading reveal-up">
 				<div>
-					<p class="section-kicker">Galeria dinamica</p>
+					<p class="section-kicker">Galeria audiovisual</p>
 					<h2>Videos del tour</h2>
 				</div>
-				<p>La seleccion se genera desde AngularJS y puedes alternar entre tipos de contenido.</p>
-			</div>
-
-			<div class="filter-group reveal-up mb-4">
-				<button
-					type="button"
-					class="btn"
-					ng-class="vm.activeVideoFilter === filter ? 'btn-dark' : 'btn-outline-dark'"
-					ng-repeat="filter in vm.videoFilters"
-					ng-click="vm.setVideoFilter(filter)">
-					{{ filter }}
-				</button>
+				<p>La galeria muestra todas las piezas del tour juntas para ver la experiencia completa de un vistazo.</p>
 			</div>
 
 			<div class="row g-4">
-				<div class="col-lg-6" ng-repeat="video in vm.videos | filter:vm.videoFilter track by video.title">
+				<div class="col-lg-6" ng-repeat="video in vm.videos track by video.title">
 					<div class="video-card reveal-up">
 						<div class="video-copy">
 							<span>{{ video.type }}</span>
